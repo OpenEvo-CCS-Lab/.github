@@ -15,7 +15,6 @@ Explain how it fits into the CCS Lab ecosystem and what problem it solves.>
 
 This repository is one component of the broader **Computational Curriculum Studies (CCS) Lab**, which includes:
 
-- **Core libraries** (e.g., `ccslab`, `ccs-graph`)
 - **Knowledge bases** (concepts, measures, literature, people)
 - **Curriculum analysis tools**
 - **Curriculum design tools**

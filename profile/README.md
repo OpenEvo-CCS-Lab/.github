@@ -12,14 +12,14 @@ Computational Curriculum Studies is an emerging field intended to understand the
 
 ---
 
-## 🧩 Part of the CCS Lab Ecosystem
+## 🧩 Overview of the CCS Lab Ecosystem
 
 This repository is one component of the broader **Computational Curriculum Studies (CCS) Lab**, which includes:
 
-- **Knowledge bases** (concepts, measures, literature, people)
-- **Curriculum analysis tools**
+- **CCS Graph:** the concepts, theories, methods, and measures that comprise portential directions in CCS
+- **OpenEvo Graph:** the concepts, theories, methods, and resources that comprise the OpenEvo educational design concept and research model 
 - **Curriculum design tools**
-- **FAIR metadata and provenance pipelines**
+- **Metadata, provenance, open and FAIR data pipelines**
 
 Learn more at the [OpenEvo website](http://openevo.eva.mpg.de).
 

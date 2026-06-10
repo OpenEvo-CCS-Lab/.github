@@ -23,11 +23,3 @@ This repository is one component of the broader **Computational Curriculum Studi
 
 Learn more at the [OpenEvo website](http://openevo.eva.mpg.de).
 
----
-
-## 🚀 Features
-
-- <Feature 1>
-- <Feature 2>
-- <Feature 3>
-- <Feature 4>

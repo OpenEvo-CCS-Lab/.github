@@ -9,6 +9,14 @@
 
 ---
 
+> **🔒 Most of this ecosystem is in private development.** We're a small, active lab restructuring
+> our shared architecture (ontology, knowledge graphs, curriculum data models) and want room to
+> iterate without every in-progress branch being publicly visible. The repos below stay public
+> because they're either finished reference material or public-facing infrastructure (the
+> ConceptBase Explorer app, the `w3id.org/openevo` namespace, the shared kernel ontology). More
+> repositories will re-open as their content and tooling reach a stable, citable state — nothing
+> is abandoned, just incubating.
+
 ## 📘 What is OpenEvo?
 
 Every curriculum is a claim about the future — a document that says, in effect, "this is what our children should come to know, value, and be able to do." Multiply that claim across thousands of school systems, subjects, grade levels, languages, and cultural traditions, and you get one of the largest, least-mapped bodies of applied cultural knowledge in the world.
@@ -40,6 +48,8 @@ The **[OpenEvo ConceptBase](https://github.com/openevo-ccs/conceptbase)** is the
 **In plain terms:** think of OECB as a shared dictionary and grammar, not a single master curriculum. It doesn't tell anyone which curriculum is "correct" — it gives independent projects, built by different teams with different theoretical commitments, a common structure so their work can be *compared, linked, and reasoned over together*, the way `schema.org` lets independent websites describe products or events in a way search engines can all understand.
 
 **In more technical terms:** OECB is a Git-native, version-controlled registry of an ontology (`oe:Concept`, `oe:Competency`, `oe:LPM`, `oe:Strand`, and related classes), controlled vocabularies, and cross-vocabulary alignment records (`skos:closeMatch`, `skos:relatedMatch`, etc.), profiled against existing standards — SKOS, IEEE LOM, schema.org, and 1EdTech CASE — rather than reinventing them. Every entity is openly licensed, persistently identified, and structured for both human review (YAML, pull requests, RFC governance) and machine consumption (flat JSON, with JSON-LD/RDF/SPARQL support on the roadmap).
+
+The shared upper ontology, identifier scheme, and cross-repo governance process that OECB and its sibling repos build on now live in **[openevo-core](https://github.com/openevo-ccs/openevo-core)**, the ecosystem's kernel — see that repo for the full Foundational/Graph/Project architecture.
 
 ### 🔗 Try it: the OECB App
 
@@ -80,6 +90,14 @@ Explore the data visually, with interactive charts and topic browsers, in the **
 
 This work is a concrete example of CCS methods applied to a real, high-stakes curricular question: how do we teach students that they are, themselves, products and agents of cultural and biological evolution — and where in a national curriculum does that story already have room to be told?
 
+Our **[EvoMentor_DE](https://github.com/openevo-ccs/EvoMentor_DE)** repository is the German-language digital ecosystem built around the same theme, for direct classroom integration.
+
+---
+
+## 🧪 NetLogo Models
+
+**[netlogo](https://github.com/openevo-ccs/netlogo)** is our growing collection of agent-based NetLogo models for teaching evolutionary and behavioral concepts interactively — built for direct classroom use alongside the Learning Progression Maps in our (currently private) curriculum repositories.
+
 ---
 
 ## 🌍 Get Involved
@@ -88,26 +106,27 @@ Curriculum shapes lives and communities — and yet the models behind it are rar
 
 Whether you are an **educational researcher** studying learning progressions, a **policymaker** designing or revising standards, an **educator** navigating what a curriculum actually asks of you and your students, or simply a **curious student** who has ever wondered why your school taught things in the order it did — there is a way to contribute:
 
-- 🔍 **Explore** the [ConceptBase Explorer](https://openevo-ccs.github.io/conceptbase/) or the [eva_buch app](https://openevo-ccs.github.io/eva_buch/) and see how your own curriculum's concepts map (or don't) onto others.
-- 🧭 **Propose** a new controlled vocabulary, alignment, or Learning Progression Model for a subject, grade band, or country not yet represented — domain editors are especially needed for underrepresented subject areas and educational systems.
-- 🗳️ **Contribute** via our RFC-based governance process — every substantive change to the shared ontology is proposed, reviewed, and documented, not decided unilaterally.
+- 🔍 **Explore** the [ConceptBase Explorer](https://openevo-ccs.github.io/conceptbase/), [openevo-core](https://github.com/openevo-ccs/openevo-core), or the [eva_buch app](https://openevo-ccs.github.io/eva_buch/) and see how your own curriculum's concepts map (or don't) onto others.
+- 🧭 **Propose** a new controlled vocabulary or alignment via OECB's RFC-based governance process — every substantive change to the shared ontology is proposed, reviewed, and documented, not decided unilaterally.
 - 🌐 **Translate** — multilingual concept labels and definitions are an open, active need across the ecosystem.
 - 💬 **Ask questions** by opening an issue in any repository below, or reach out directly.
 
-No single team can map the world's curricula alone — and that's rather the point. OECB's pluralistic design means genuinely different theoretical and cultural perspectives can coexist and interoperate, rather than being flattened into one "official" model.
+Curriculum- and Learning-Progression-Model-specific repositories are currently in private development while we restructure — reach out if you'd like early access to that work.
 
 ---
 
-## 🗂️ Explore the Ecosystem
+## 🗂️ Explore the Ecosystem — public repos
 
 | Repository | What it is |
 |---|---|
 | **[conceptbase](https://github.com/openevo-ccs/conceptbase)** | The OpenEvo ConceptBase (OECB) — the shared ontology, schemas, vocabularies, and the ConceptBase Explorer app |
-| **[bio-core-k12](https://github.com/openevo-ccs/bio-core-k12)** | A reference K-12 Learning Progression Model for evolutionary biology, built on OECB |
-| **[oe-interdisciplinary-k12](https://github.com/openevo-ccs/oe-interdisciplinary-k12)** | A reference K-12 Learning Progression Model spanning biology, social studies, and computer science |
+| **[openevo-core](https://github.com/openevo-ccs/openevo-core)** | The shared kernel — upper ontology, identifier scheme, cross-repo RFC process, and the `w3id.org/openevo` namespace root |
 | **[eva_buch](https://github.com/openevo-ccs/eva_buch)** | German-language topic modelling dataset and interactive visualizations supporting Susan Hanisch's forthcoming (2027) book on teaching evolutionary anthropology |
+| **[EvoMentor_DE](https://github.com/openevo-ccs/EvoMentor_DE)** | German-language digital ecosystem for evolutionary-anthropology curriculum integration |
+| **[netlogo](https://github.com/openevo-ccs/netlogo)** | Agent-based NetLogo models for teaching evolutionary and behavioral concepts |
+| **[w3id.org](https://github.com/openevo-ccs/w3id.org)** | Our fork of the shared `w3id.org` permanent-identifier registry, used to submit namespace changes upstream |
 
-More repositories — additional vocabularies, subject-area and grade-band models, and tooling — are added as the ecosystem grows. See each repository's own README for its specific scope, status, and license details.
+Learning Progression Model repos (`bio-core-k12`, `oe-interdisciplinary-k12`), the curriculum-agents tooling, and the broader Foundational/Graph/Project base architecture are in private development for now — see the note at the top of this page.
 
 ---
 

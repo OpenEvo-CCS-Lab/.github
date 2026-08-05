@@ -23,7 +23,7 @@ Every curriculum is a claim about the future — a document that says, in effect
 
 **OpenEvo** is a research lab studying that body of knowledge computationally. We treat curricula — standards documents, learning progressions, competency frameworks, textbooks — as **cultural models**: structured, evolving representations of a society's understanding of learning, development, and human nature. Our work asks how the precision and scale of computational methods (ontologies, knowledge graphs, natural language processing, topic modelling) can help us describe, compare, and improve these models, without losing sight of the human complexity and lived context they are meant to serve.
 
-This organization is the GitHub home for that work: an evolving ecosystem of linked data, ontologies, tools, and datasets, anchored by the **OpenEvo ConceptBase (OECB)**.
+This organization is the GitHub home for that work: an evolving ecosystem of linked data, ontologies, tools, and datasets, anchored by a shared kernel (upper ontology, identifier scheme, cross-repo governance) in **[openevo-core](https://github.com/openevo-ccs/openevo-core)**, with **ConceptBase** as its original and most mature Foundational Repo.
 
 Learn more about the lab at [openevo.eva.mpg.de](http://openevo.eva.mpg.de).
 
@@ -41,25 +41,25 @@ Our own research focus within this broader field is on interdisciplinary structu
 
 ---
 
-## 🧩 The OpenEvo ConceptBase (OECB)
+## 🧩 ConceptBase
 
-The **[OpenEvo ConceptBase](https://github.com/openevo-ccs/conceptbase)** is the semantic backbone of this ecosystem — the shared ontology, controlled vocabularies, and JSON Schemas that let independently maintained curriculum repositories (Learning Progression Models, Strands, competency frameworks) describe their content in a common, interoperable language.
+**[ConceptBase](https://github.com/openevo-ccs/conceptbase)** is one of nine co-equal **Foundational Repos** sharing [openevo-core](https://github.com/openevo-ccs/openevo-core)'s kernel — the richest and most mature today, hosting the shared ontology instances, controlled vocabularies, and JSON Schemas that let independently maintained curriculum repositories (Learning Progression Models, Strands, competency frameworks) describe their content in a common, interoperable language.
 
-**In plain terms:** think of OECB as a shared dictionary and grammar, not a single master curriculum. It doesn't tell anyone which curriculum is "correct" — it gives independent projects, built by different teams with different theoretical commitments, a common structure so their work can be *compared, linked, and reasoned over together*, the way `schema.org` lets independent websites describe products or events in a way search engines can all understand.
+**In plain terms:** think of ConceptBase as a shared dictionary and grammar, not a single master curriculum. It doesn't tell anyone which curriculum is "correct" — it gives independent projects, built by different teams with different theoretical commitments, a common structure so their work can be *compared, linked, and reasoned over together*, the way `schema.org` lets independent websites describe products or events in a way search engines can all understand.
 
-**In more technical terms:** OECB is a Git-native, version-controlled registry of an ontology (`oe:Concept`, `oe:Competency`, `oe:LPM`, `oe:Strand`, and related classes), controlled vocabularies, and cross-vocabulary alignment records (`skos:closeMatch`, `skos:relatedMatch`, etc.), profiled against existing standards — SKOS, IEEE LOM, schema.org, and 1EdTech CASE — rather than reinventing them. Every entity is openly licensed, persistently identified, and structured for both human review (YAML, pull requests, RFC governance) and machine consumption (flat JSON, with JSON-LD/RDF/SPARQL support on the roadmap).
+**In more technical terms:** ConceptBase is a Git-native, version-controlled registry of ontology instances (`oe:Concept`, `oe:LPM`, `oe:Strand`, and related classes), controlled vocabularies, and cross-vocabulary alignment records (`skos:closeMatch`, `skos:relatedMatch`, etc.), profiled against existing standards — SKOS, IEEE LOM, schema.org, and 1EdTech CASE — rather than reinventing them. Every entity is openly licensed, persistently identified, and structured for both human review (YAML, pull requests, RFC governance) and machine consumption (flat JSON, with JSON-LD/RDF/SPARQL support on the roadmap).
 
-The shared upper ontology, identifier scheme, and cross-repo governance process that OECB and its sibling repos build on now live in **[openevo-core](https://github.com/openevo-ccs/openevo-core)**, the ecosystem's kernel — see that repo for the full Foundational/Graph/Project architecture.
+The shared upper ontology, identifier scheme, and cross-repo governance process that ConceptBase and its sibling Foundational Repos build on live in **[openevo-core](https://github.com/openevo-ccs/openevo-core)**, the ecosystem's kernel — see that repo for the full Foundational/Project architecture, including the other eight Foundational Repos.
 
-### 🔗 Try it: the OECB App
+### 🔗 Try it: the ConceptBase Explorer
 
 The **[ConceptBase Explorer](https://openevo-ccs.github.io/conceptbase/)** is our interactive app for browsing this knowledge graph — no account or setup required. Use the **Concept Lens** to see how a single idea (e.g. "Selection") is defined differently across disciplines and vocabularies, trace how concepts recur across grade bands and subjects, and follow alignment records that document where different curriculum models genuinely agree, and where they don't.
 
 ### The `w3id.org/openevo` namespace, briefly
 
-Every concept, competency, and vocabulary in OECB has a **permanent web address** under `w3id.org/openevo/` — for example, `w3id.org/openevo/concept/OE-CONCEPT-000213`.
+Every concept, competency, and vocabulary in ConceptBase has a **permanent web address** under `w3id.org/openevo/` — for example, `w3id.org/openevo/concept/OE-CONCEPT-000213`.
 
-**In plain terms:** this is like an ISBN for an idea. Anyone, anywhere, can cite "Selection as defined by OECB" using a link that will keep working indefinitely — even if we move servers, rebuild our website, or change tools — because [w3id.org](https://w3id.org) is a permanent redirection service designed exactly for this purpose. That matters for a research field: a citation in a 2026 paper should still resolve correctly in 2036.
+**In plain terms:** this is like an ISBN for an idea. Anyone, anywhere, can cite "Selection as defined by ConceptBase" using a link that will keep working indefinitely — even if we move servers, rebuild our website, or change tools — because [w3id.org](https://w3id.org) is a permanent redirection service designed exactly for this purpose. That matters for a research field: a citation in a 2026 paper should still resolve correctly in 2036.
 
 ---
 
@@ -107,7 +107,7 @@ Curriculum shapes lives and communities — and yet the models behind it are rar
 Whether you are an **educational researcher** studying learning progressions, a **policymaker** designing or revising standards, an **educator** navigating what a curriculum actually asks of you and your students, or simply a **curious student** who has ever wondered why your school taught things in the order it did — there is a way to contribute:
 
 - 🔍 **Explore** the [ConceptBase Explorer](https://openevo-ccs.github.io/conceptbase/), [openevo-core](https://github.com/openevo-ccs/openevo-core), or the [eva_buch app](https://openevo-ccs.github.io/eva_buch/) and see how your own curriculum's concepts map (or don't) onto others.
-- 🧭 **Propose** a new controlled vocabulary or alignment via OECB's RFC-based governance process — every substantive change to the shared ontology is proposed, reviewed, and documented, not decided unilaterally.
+- 🧭 **Propose** a new controlled vocabulary or alignment via ConceptBase's RFC-based governance process — every substantive change to the shared ontology is proposed, reviewed, and documented, not decided unilaterally.
 - 🌐 **Translate** — multilingual concept labels and definitions are an open, active need across the ecosystem.
 - 💬 **Ask questions** by opening an issue in any repository below, or reach out directly.
 
@@ -115,18 +115,36 @@ Curriculum- and Learning-Progression-Model-specific repositories are currently i
 
 ---
 
-## 🗂️ Explore the Ecosystem — public repos
+## 🗂️ Explore the Ecosystem
+
+**Public repos:**
 
 | Repository | What it is |
 |---|---|
-| **[conceptbase](https://github.com/openevo-ccs/conceptbase)** | The OpenEvo ConceptBase (OECB) — the shared ontology, schemas, vocabularies, and the ConceptBase Explorer app |
+| **[conceptbase](https://github.com/openevo-ccs/conceptbase)** | ConceptBase — a Foundational Repo: concept/LPM/strand ontology instances, schemas, vocabularies, and the ConceptBase Explorer app |
 | **[openevo-core](https://github.com/openevo-ccs/openevo-core)** | The shared kernel — upper ontology, identifier scheme, cross-repo RFC process, and the `w3id.org/openevo` namespace root |
 | **[eva_buch](https://github.com/openevo-ccs/eva_buch)** | German-language topic modelling dataset and interactive visualizations supporting Susan Hanisch's forthcoming (2027) book on teaching evolutionary anthropology |
 | **[EvoMentor_DE](https://github.com/openevo-ccs/EvoMentor_DE)** | German-language digital ecosystem for evolutionary-anthropology curriculum integration |
 | **[netlogo](https://github.com/openevo-ccs/netlogo)** | Agent-based NetLogo models for teaching evolutionary and behavioral concepts |
 | **[w3id.org](https://github.com/openevo-ccs/w3id.org)** | Our fork of the shared `w3id.org` permanent-identifier registry, used to submit namespace changes upstream |
 
-Learning Progression Model repos (`bio-core-k12`, `oe-interdisciplinary-k12`), the curriculum-agents tooling, and the broader Foundational/Graph/Project base architecture are in private development for now — see the note at the top of this page.
+### 🌱 In development
+
+The rest of the ecosystem's architecture, named here so the shape is visible even while the content
+itself is still private — see the note at the top of this page:
+
+- **Foundational Repos** (nine co-equal repos sharing `openevo-core`'s kernel; ConceptBase, above, is
+  the only one currently public): CompetencyBase · TeachingBase · ProjectBase · LiteratureBase ·
+  HumanBase · TheoryBase · QuestionBase · MethodsBase
+- **Project Repos** (Learning Progression Models, field-knowledge graphs, applications, and
+  theory-grounding repos that assemble Foundational content by reference) — a representative few:
+  `bio-core-k12` and `oe-interdisciplinary-k12` (the two reference LPMs), `ccs-graph` (field-specific
+  interpretation over base facts), `curriculum-evolution` (the theoretical grounding this lab's work
+  builds on), and `openlpm` (a white-label platform meant for outside research groups to fork and run
+  their own LPMs, staying interoperable with this ecosystem — reach out if that's you; still early)
+
+Nothing here is abandoned — this organization's `.github` profile reflects a small, active lab
+restructuring shared architecture, not a finished product with a hidden roadmap.
 
 ---
 

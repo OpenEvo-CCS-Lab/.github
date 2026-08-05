@@ -51,10 +51,6 @@ Our own research focus within this broader field is on interdisciplinary structu
 
 The shared upper ontology, identifier scheme, and cross-repo governance process that ConceptBase and its sibling Foundational Repos build on live in **[openevo-core](https://github.com/openevo-ccs/openevo-core)**, the ecosystem's kernel — see that repo for the full Foundational/Project architecture, including the other eight Foundational Repos.
 
-### 🔗 Try it: the ConceptBase Explorer
-
-The **[ConceptBase Explorer](https://openevo-ccs.github.io/conceptbase/)** is our interactive app for browsing this knowledge graph — no account or setup required. Use the **Concept Lens** to see how a single idea (e.g. "Selection") is defined differently across disciplines and vocabularies, trace how concepts recur across grade bands and subjects, and follow alignment records that document where different curriculum models genuinely agree, and where they don't.
-
 ### The `w3id.org/openevo` namespace, briefly
 
 Every concept, competency, and vocabulary in ConceptBase has a **permanent web address** under `w3id.org/openevo/` — for example, `w3id.org/openevo/concept/OE-CONCEPT-000213`.
@@ -106,7 +102,7 @@ Curriculum shapes lives and communities — and yet the models behind it are rar
 
 Whether you are an **educational researcher** studying learning progressions, a **policymaker** designing or revising standards, an **educator** navigating what a curriculum actually asks of you and your students, or simply a **curious student** who has ever wondered why your school taught things in the order it did — there is a way to contribute:
 
-- 🔍 **Explore** the [ConceptBase Explorer](https://openevo-ccs.github.io/conceptbase/), [openevo-core](https://github.com/openevo-ccs/openevo-core), or the [eva_buch app](https://openevo-ccs.github.io/eva_buch/) and see how your own curriculum's concepts map (or don't) onto others.
+- 🔍 **Explore** [openevo-core](https://github.com/openevo-ccs/openevo-core) or the [eva_buch app](https://openevo-ccs.github.io/eva_buch/) and see how your own curriculum's concepts map (or don't) onto others.
 - 🧭 **Propose** a new controlled vocabulary or alignment via ConceptBase's RFC-based governance process — every substantive change to the shared ontology is proposed, reviewed, and documented, not decided unilaterally.
 - 🌐 **Translate** — multilingual concept labels and definitions are an open, active need across the ecosystem.
 - 💬 **Ask questions** by opening an issue in any repository below, or reach out directly.

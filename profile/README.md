@@ -134,7 +134,7 @@ itself is still private — see the note at the top of this page:
   HumanBase · TheoryBase · QuestionBase · MethodsBase
 - **Project Repos** (Learning Progression Models, field-knowledge graphs, applications, and
   theory-grounding repos that assemble Foundational content by reference) — a representative few:
-  `bio-core-k12` and `oe-interdisciplinary-k12` (the two reference LPMs), `ccs-graph` (field-specific
+  `bio-core-k12` and `interdisciplinary-k12` (the two reference LPMs), `ccs-graph` (field-specific
   interpretation over base facts), `curriculum-evolution` (the theoretical grounding this lab's work
   builds on), and `openlpm` (a white-label platform meant for outside research groups to fork and run
   their own LPMs, staying interoperable with this ecosystem — reach out if that's you; still early)
